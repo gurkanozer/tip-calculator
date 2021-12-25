@@ -1,0 +1,13 @@
+.attribution{
+    width:100%;
+    height:auto;
+    padding:rem(16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-background;
+    color:$color-secondary;
+    a{
+        color:$color-primary;
+    }
+}

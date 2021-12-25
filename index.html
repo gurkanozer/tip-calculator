@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <main>
+      <header>
+        <img src="./images/logo.svg" alt="">
+      </header>
+      <section class="calculator">
+        <div class="calculator__inputs">
+            <div class="input-group input-bill">  
+              <label for="bill">Bill</label>
+              <input type="text" name="bill" id="bill">
+            </div>
+            <div>
+              <label for="tip">Select Tip %</label>
+              <div class="percentage">
+                <label class="percentage__container">
+                  <input class="input-radio" type="radio" name="tip" value="5">
+                  <span class="checkmark">5%
+                  </span>
+                </label>
+                <label class="percentage__container">
+                  <input class="input-radio" type="radio" name="tip" value="10">
+                  <span class="checkmark">10%
+                  </span>
+                </label>
+                <label class="percentage__container">
+                  <input class="input-radio" type="radio" name="tip" value="15">
+                  <span class="checkmark">15%
+                  </span>
+                </label>
+                <label class="percentage__container">
+                  <input class="input-radio" type="radio" name="tip" value="25">
+                  <span class="checkmark">25%
+                  </span>
+                </label>
+                <label class="percentage__container">
+                  <input class="input-radio" type="radio" name="tip" value="50">
+                  <span class="checkmark">50%
+                  </span>
+                </label>
+                <label class="percentage__container">
+                  <div class="input-group">  
+                    <input class="input-text" type="text" name="custom-tip" id="custom-tip" placeholder="Custom">
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="input-group input-nop">  
+              <label for="nop">text of People</label>
+              <input type="text" name="nop" id="nop">
+            </div>
+        </div>
+        <div class="calculator__result">
+            <div>
+              <div class="tip-amount">
+                <h4 class="calculator__value">
+                  <span class="calculator__title">Tip Amount</span>
+                  <span class="calculator__sub-title">/ person</span>
+                $<span class="tip-amount-value">0.00</span></h4>
+              </div>
+              <div class="total">  
+                <h4 class="calculator__value">
+                  <span class="calculator__title">Total</span>
+                  <span class="calculator__sub-title">/ person</span>
+                  $<span class="total-amount-value">0.00</span>
+              </h4>
+              </div>
+            </div>
+            <button class="btn btn-reset">reset</button>
+        </div>
+      </section>
+  </main>
+
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p> 
+    <p>Coded by <a href="https://github.com/gurkanozer">Gürkan Özer</a>.</p>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
